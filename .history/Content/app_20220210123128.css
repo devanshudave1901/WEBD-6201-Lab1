@@ -7,10 +7,6 @@
   padding-top: 10px;
 }
 
-#Contactform button {
-  margin-top: 20px;
-  margin-left: 500px;
-}
 .formInputBox {
   padding-left: 60px;
   margin: 8px 0;
@@ -19,5 +15,5 @@
 }
 
 #contactId {
-  padding-left: 520px;
+  padding-left: 550px;
 }
