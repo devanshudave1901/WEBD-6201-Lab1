@@ -39,17 +39,7 @@
   display: table;
 }
 
-#pArea {
-  padding-top: 40px;
-  padding-left: 250px;
-  padding-bottom: 100px;
-}
-#pArea1 {
-  padding-top: 40px;
-  padding-left: 150px;
-  padding-bottom: 100px;
-  padding-right: 90px;
-}
-#contentArea {
-  border-radius: 30px;
+#productArea {
+  padding-top: 540px;
+  padding-left: 400px;
 }
