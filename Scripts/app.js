@@ -56,6 +56,10 @@ function contactPage() {
   document.body.style.backgroundImage ="url('images/dc logo.jpg')";
 }
 function productPage() {
+  var projectsHeading = document.getElementById("projectsID");
+  projectsHeading.innerHTML = " <i class = 'fa-solid fa-box'></i> Our Projects";
+  
+
   var currentLink1 = document.getElementById("productsLink");
   // alert(currentLink1.textContent);
   currentLink1.textContent = "";
@@ -88,6 +92,8 @@ function productPage() {
 }
 
 function servicePage() {
+  var ServiceHeading = document.getElementById("serviceID");
+  ServiceHeading.innerHTML = "Our Services";
   var currentLink1 = document.getElementById("productsLink");
   currentLink1.textContent = "";
   // need to add the icon in js
@@ -113,6 +119,9 @@ function servicePage() {
         "our website design."   
 }
 function aboutPage() {
+
+  var getHeading = document.getElementById("aboutId");
+  getHeading.innerHTML = " About Us"
   var currentLink1 = document.getElementById("productsLink");
   // alert(currentLink1.textContent);
   currentLink1.textContent = "";
@@ -132,7 +141,7 @@ function aboutPage() {
           "at Durham College. His Hobbies include playing sports and watching movies. Here is a link to his resume";
 
       heading2 =document.getElementById("heading2");
-      heading2.innerHTML = "This is a picture of Devanshu. Devanshu is a second year student in the Durham College"+ 
+      heading2.innerHTML = "This is a picture of Devanshu. Devanshu is a second year student in the Durham College "+ 
           "Computer Programmer Analyst Program. His Hobbies inlcude playing games and programming."  
 }
 
