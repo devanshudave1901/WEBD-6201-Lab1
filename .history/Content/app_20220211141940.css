@@ -20,7 +20,6 @@
 
 #contactId {
   padding-left: 520px;
-  color: black;
 }
 
 * {
@@ -67,10 +66,4 @@
 #projectsID {
   padding-left: 520px;
   color: black;
-}
-#heading1 {
-  color: black;
-  padding-left: 350px;
-  padding-top: 100px;
-  padding-bottom: 200px;
 }

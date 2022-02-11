@@ -158,7 +158,6 @@ function homePage() {
   var currentLink1 = document.getElementById("productsLink");
 
   currentLink1.textContent = "";
-
   // need to add the icon in js
   // currentLink1.textContent = "<i class='fa-solid fa-th'></i>";
   currentLink1.textContent = "Projects";
@@ -171,8 +170,7 @@ function homePage() {
   var heading1;
 
   heading1 = document.getElementById("heading1");
-  heading1.innerHTML =
-    "<i class = 'fa-solid fa-chess'></i> Welcome to our Website <i class = 'fa-solid fa-chess'></i>";
+  heading1.innerHTML = "Hello! Welcome to our WEBD6201 Website";
 }
 function start() {
   switch (document.title) {

@@ -15,8 +15,6 @@ function updateTime() {
 }
 function contactPage() {
   // alert(document.title);
-  var contactId = document.getElementById("contactId");
-  contactId.innerHTML = " <i class = 'fa-solid fa-comments'></i> Contact Us";
 
   var currentLink1 = document.getElementById("productsLink");
   // alert(currentLink1.textContent);
@@ -128,7 +126,7 @@ function servicePage() {
 }
 function aboutPage() {
   var getHeading = document.getElementById("aboutId");
-  getHeading.innerHTML = "  <i class = 'fa-solid fa-user'></i> About Us";
+  getHeading.innerHTML = "  <i class = 'fa-solid fa-truck'></i> About Us";
   var currentLink1 = document.getElementById("productsLink");
   // alert(currentLink1.textContent);
   currentLink1.textContent = "";
@@ -158,7 +156,6 @@ function homePage() {
   var currentLink1 = document.getElementById("productsLink");
 
   currentLink1.textContent = "";
-
   // need to add the icon in js
   // currentLink1.textContent = "<i class='fa-solid fa-th'></i>";
   currentLink1.textContent = "Projects";
@@ -171,8 +168,7 @@ function homePage() {
   var heading1;
 
   heading1 = document.getElementById("heading1");
-  heading1.innerHTML =
-    "<i class = 'fa-solid fa-chess'></i> Welcome to our Website <i class = 'fa-solid fa-chess'></i>";
+  heading1.innerHTML = "Hello! Welcome to our WEBD6201 Website";
 }
 function start() {
   switch (document.title) {

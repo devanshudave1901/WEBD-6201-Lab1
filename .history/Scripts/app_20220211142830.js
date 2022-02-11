@@ -172,7 +172,7 @@ function homePage() {
 
   heading1 = document.getElementById("heading1");
   heading1.innerHTML =
-    "<i class = 'fa-solid fa-chess'></i> Welcome to our Website <i class = 'fa-solid fa-chess'></i>";
+    "<hr/><i class = 'fa-solid fa-chess'></i> Welcome to our Website <i class = 'fa-solid fa-chess'></i><hr/>";
 }
 function start() {
   switch (document.title) {
