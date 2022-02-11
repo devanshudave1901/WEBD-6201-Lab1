@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>Contact Us</title>
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -15,6 +15,10 @@
     />
     <link rel="stylesheet" href="./Content/app.css" />
     <script src="./Scripts/app.js"></script>
+
+    <!-- <script>
+      alert(document.title);
+    </script> -->
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -40,7 +44,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" id="productsLink" href="./products.html"
+              <a class="nav-link" href="./products.html"
                 ><i class="fa-solid fa-th"></i> Products</a
               >
             </li>
@@ -54,7 +58,11 @@
                 <i class="fa-solid fa-circle-info"></i> About Us</a
               >
             </li>
-            <li class="nav-item" id="humanResources"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">
+                <i class="fa-solid fa-phone"></i> Contact Us</a
+              >
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">
                 <i class="fa-solid fa-phone"></i> Contact Us</a
@@ -64,8 +72,60 @@
         </div>
       </div>
     </nav>
+    <div class="jumbotron bg-secondary container" id="contentArea">
+      <br />
+      <br />
+      <br />
+      <h1 id="contactId"><i class="fa-solid fa-comments"></i> Contact Us</h1>
+      <br />
+
+      <form id="Contactform">
+        <div class="form-group">
+          <label for="InputName">Your Name: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="InputName"
+            placeholder="Name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="InputNumber">Contact Number: </label>
+          <input
+            type="number"
+            class="form-control"
+            id="InputNumber"
+            placeholder="Contact Number"
+          />
+        </div>
+        <div class="form-group">
+          <label for="InputEmail1"> Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="InputEmail1"
+            placeholder="Email Address"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="InputMessage">Message</label>
+          <textarea
+            class="form-control"
+            id="InputMessage"
+            placeholder="Message"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <button type="submit" id="submitButton" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
+    </div>
     <!-- 3RD Party Library-->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./Scripts/app.js"></script>
   </body>
 </html>

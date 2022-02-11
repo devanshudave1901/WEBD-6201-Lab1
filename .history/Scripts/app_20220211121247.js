@@ -65,10 +65,7 @@ function productPage() {
   humanResourcesLink.innerHTML =
     " <a class='nav-link' href='#'> <i class = 'fa-solid fa-child'></i> Human Resources</a>";
 }
-
 function servicePage() {
-  var currentLink1 = document.getElementById("productsLink");
-  alert(currentLink1.textContent);
   currentLink1.textContent = "";
   // need to add the icon in js
   // currentLink1.textContent = "<i class='fa-solid fa-th'></i>";
@@ -92,8 +89,7 @@ function aboutPage() {
 }
 
 function homePage() {
-  var currentLink1 = document.getElementById("productsLink");
-
+  alert(currentLink1.textContent);
   currentLink1.textContent = "";
   // need to add the icon in js
   // currentLink1.textContent = "<i class='fa-solid fa-th'></i>";
@@ -110,7 +106,7 @@ function start() {
       break;
     case "Services":
       servicePage();
-
+      alert("hello");
       break;
     case "Products":
       productPage();

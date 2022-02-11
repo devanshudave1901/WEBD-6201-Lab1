@@ -110,7 +110,7 @@ function start() {
       break;
     case "Services":
       servicePage();
-
+      alert("hello");
       break;
     case "Products":
       productPage();

@@ -65,19 +65,26 @@ function productPage() {
   humanResourcesLink.innerHTML =
     " <a class='nav-link' href='#'> <i class = 'fa-solid fa-child'></i> Human Resources</a>";
 }
-
-function servicePage() {
-  var currentLink1 = document.getElementById("productsLink");
-  alert(currentLink1.textContent);
-  currentLink1.textContent = "";
-  // need to add the icon in js
-  // currentLink1.textContent = "<i class='fa-solid fa-th'></i>";
-  currentLink1.textContent = "Projects";
-
-  var humanResourcesLink = document.getElementById("humanResources");
-  humanResourcesLink.innerHTML =
-    " <a class='nav-link' href='#'> <i class = 'fa-solid fa-child'></i> Human Resources</a>";
+function start() {
+  switch (document.title) {
+    case "Services":
+      alert("about us");
+      break;
+    case "Products":
+      productPage();
+      break;
+    case "Contact Us":
+      contactPage();
+      break;
+    case "Home":
+      homePage();
+      break;
+    case "About Us":
+      aboutPage();
+      break;
+  }
 }
+
 function aboutPage() {
   var currentLink1 = document.getElementById("productsLink");
   // alert(currentLink1.textContent);
@@ -92,8 +99,7 @@ function aboutPage() {
 }
 
 function homePage() {
-  var currentLink1 = document.getElementById("productsLink");
-
+  alert(currentLink1.textContent);
   currentLink1.textContent = "";
   // need to add the icon in js
   // currentLink1.textContent = "<i class='fa-solid fa-th'></i>";
@@ -102,24 +108,4 @@ function homePage() {
   var humanResourcesLink = document.getElementById("humanResources");
   humanResourcesLink.innerHTML =
     " <a class='nav-link' href='#'> <i class = 'fa-solid fa-child'></i> Human Resources</a>";
-}
-function start() {
-  switch (document.title) {
-    case "Home":
-      homePage();
-      break;
-    case "Services":
-      servicePage();
-
-      break;
-    case "Products":
-      productPage();
-      break;
-    case "Contact Us":
-      contactPage();
-      break;
-    case "About Us":
-      aboutPage();
-      break;
-  }
 }

@@ -68,7 +68,7 @@ function productPage() {
 
 function servicePage() {
   var currentLink1 = document.getElementById("productsLink");
-  alert(currentLink1.textContent);
+  // alert(currentLink1.textContent);
   currentLink1.textContent = "";
   // need to add the icon in js
   // currentLink1.textContent = "<i class='fa-solid fa-th'></i>";
@@ -92,8 +92,7 @@ function aboutPage() {
 }
 
 function homePage() {
-  var currentLink1 = document.getElementById("productsLink");
-
+  alert(currentLink1.textContent);
   currentLink1.textContent = "";
   // need to add the icon in js
   // currentLink1.textContent = "<i class='fa-solid fa-th'></i>";
@@ -110,7 +109,7 @@ function start() {
       break;
     case "Services":
       servicePage();
-
+      alert("hello");
       break;
     case "Products":
       productPage();
