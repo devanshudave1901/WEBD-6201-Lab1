@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>Contact Us</title>
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -15,6 +15,10 @@
     />
     <link rel="stylesheet" href="./Content/app.css" />
     <script src="./Scripts/app.js"></script>
+
+    <!-- <script>
+      alert(document.title);
+    </script> -->
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -67,41 +71,61 @@
     <div class="jumbotron bg-secondary container" id="contentArea">
       <br />
       <br />
-      <h1 id="aboutId"></h1>
-      <div id="pArea">
-        <div class="row">
-          <div class="column">
-            <img
-              src="images/Angaran2.png"
-              alt="Angaran Picture"
-              style="width: 100%"
-            />
-            <p id="heading1"></p>
-            <a href="Angaran Resume 2021.docx" download id="resumeLink">
-              Click here to download Resume.
-            </a>
-          </div>
-          <div class="column">
-            <img
-              id="dev_pic"
-              src="images/Devanshu 6.png"
-              alt="Devanshu Picture"
-              style="width: 100%"
-            />
-            <p id="heading2"></p>
-            <a
-              href="DevanshuDaveResume-Summer2022.docx"
-              download
-              id="resumeLink1"
-            >
-              Click here to download Resume.
-            </a>
-          </div>
+      <br />
+      <h1 id="contactId"></h1>
+      <br />
+
+      <form id="Contactform">
+        <div class="form-group">
+          <label for="InputName">Your Name: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="InputName"
+            placeholder="Name"
+            onfocus="this.value=''"
+          />
         </div>
-        <!-- 3RD Party Library-->
-        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      </div>
+        <div class="form-group">
+          <label for="InputNumber">Contact Number: </label>
+          <input
+            type="number"
+            class="form-control"
+            id="InputNumber"
+            placeholder="Contact Number"
+            onfocus="this.value=''"
+          />
+        </div>
+        <div class="form-group">
+          <label for="InputEmail1"> Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="InputEmail1"
+            placeholder="Email Address"
+            onfocus="this.value=''"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="InputMessage">Message</label>
+          <textarea
+            class="form-control"
+            id="InputMessage"
+            placeholder="Message"
+            rows="3"
+            onfocus="this.value=''"
+          ></textarea>
+        </div>
+
+        <button type="submit" id="submitButton" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
     </div>
+    <!-- 3RD Party Library-->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./Scripts/app.js"></script>
   </body>
 </html>

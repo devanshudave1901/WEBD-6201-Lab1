@@ -1,6 +1,6 @@
 /**Name :
  *    Student 1 - Devanshu Dave(100785733)
- *    Student 2 - Angaran Yogeswaran(100754161)
+ *    Student 2 - Angaran Yogeswaran()
  * Date Completed : 11/02/2022.
  *
  */
@@ -264,36 +264,22 @@ function homePage() {
   document.body.style.backgroundRepeat = "repeat";
   document.body.style.opacity = "0.9";
 }
-/**
- *  start function which contains switch statement on the basis of title it calls the function representing each page
- *
- */
 function start() {
-  // switch statement making a title as condition
   switch (document.title) {
-    // if title is home
     case "Home":
-      // calls home page function
       homePage();
       break;
-    // if title was Services
     case "Services":
-      // call servicePage function
       servicePage();
+
       break;
-    // if title is Products
     case "Products":
-      // calls productPage function
       productPage();
       break;
-    // if title is Contact Us
     case "Contact Us":
-      // calls contactPage function
       contactPage();
       break;
-    // if title is About  Us
     case "About Us":
-      // calls aboutPage function
       aboutPage();
       break;
   }

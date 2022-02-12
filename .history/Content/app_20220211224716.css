@@ -9,27 +9,22 @@
   padding-bottom: 10px;
   padding-top: 10px;
 }
-/*designing the button*/
 
 #Contactform button {
   margin-top: 20px;
   margin-left: 500px;
 }
-/*designing the input boxes for the form*/
-
 .formInputBox {
   padding-left: 60px;
   margin: 8px 0;
   border: dashed;
   box-sizing: border-box;
 }
-/*designing the contact id*/
 
 #contactId {
   padding-left: 520px;
   color: black;
 }
-/*overall design*/
 
 * {
   box-sizing: border-box;

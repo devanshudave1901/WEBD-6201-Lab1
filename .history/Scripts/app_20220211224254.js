@@ -1,6 +1,6 @@
 /**Name :
  *    Student 1 - Devanshu Dave(100785733)
- *    Student 2 - Angaran Yogeswaran(100754161)
+ *    Student 2 - Angaran Yogeswaran()
  * Date Completed : 11/02/2022.
  *
  */
@@ -276,24 +276,19 @@ function start() {
       // calls home page function
       homePage();
       break;
-    // if title was Services
+    // if title was services
     case "Services":
       // call servicePage function
       servicePage();
+
       break;
-    // if title is Products
     case "Products":
-      // calls productPage function
       productPage();
       break;
-    // if title is Contact Us
     case "Contact Us":
-      // calls contactPage function
       contactPage();
       break;
-    // if title is About  Us
     case "About Us":
-      // calls aboutPage function
       aboutPage();
       break;
   }

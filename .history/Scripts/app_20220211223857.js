@@ -1,6 +1,6 @@
 /**Name :
  *    Student 1 - Devanshu Dave(100785733)
- *    Student 2 - Angaran Yogeswaran(100754161)
+ *    Student 2 - Angaran Yogeswaran()
  * Date Completed : 11/02/2022.
  *
  */
@@ -212,8 +212,9 @@ function aboutPage() {
   humanResourcesLink.innerHTML =
     " <a class='nav-link' href='#'> <i class = 'fa-solid fa-child'></i> Human Resources</a>";
 
-  // declaring variables to hold the returned value from getElementById
+  // declaring variables
   var heading1;
+
   var heading2;
   // getting element by id for  tag to add the appropriate text
   heading1 = document.getElementById("heading1");
@@ -251,49 +252,33 @@ function homePage() {
 
   humanResourcesLink.innerHTML =
     " <a class='nav-link' href='#'> <i class = 'fa-solid fa-child'></i> Human Resources</a>";
-  // declaring variable to hold the returned value from getElementById
+
+  document.body.style.backgroundImage = "url('images/dc logo.jpg')";
   var heading3;
-  // getting to element by id and assigning it to variable
+
   heading3 = document.getElementById("heading3");
-  // adding context and icon
   heading3.innerHTML =
     "<i class = 'fa-solid fa-chess'></i> Welcome to our Website <i class = 'fa-solid fa-chess'></i>";
-  //Set the background of the page to the background image
-  // adding appropriate css style
   document.body.style.backgroundImage = "url('images/bgImage1.jpeg')";
   document.body.style.backgroundRepeat = "repeat";
   document.body.style.opacity = "0.9";
 }
-/**
- *  start function which contains switch statement on the basis of title it calls the function representing each page
- *
- */
 function start() {
-  // switch statement making a title as condition
   switch (document.title) {
-    // if title is home
     case "Home":
-      // calls home page function
       homePage();
       break;
-    // if title was Services
     case "Services":
-      // call servicePage function
       servicePage();
+
       break;
-    // if title is Products
     case "Products":
-      // calls productPage function
       productPage();
       break;
-    // if title is Contact Us
     case "Contact Us":
-      // calls contactPage function
       contactPage();
       break;
-    // if title is About  Us
     case "About Us":
-      // calls aboutPage function
       aboutPage();
       break;
   }

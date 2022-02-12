@@ -1,6 +1,6 @@
 /**Name :
  *    Student 1 - Devanshu Dave(100785733)
- *    Student 2 - Angaran Yogeswaran(100754161)
+ *    Student 2 - Angaran Yogeswaran()
  * Date Completed : 11/02/2022.
  *
  */
@@ -28,40 +28,41 @@ function updateTime() {
     window.location.href = "./index.html";
   }
 }
-
 /**
- * when title is contact us then this function is called to do functionality on that page
+ * clearInputField function being made to clear the input field
  */
+function clearInputField() {
+  // clears the field
+  document.getElementById("InputName").empty;
+  document.getElementById("InputEmail1").empty;
+  document.getElementById("InputNumber").empty;
+  document.getElementById("InputMessage").empty;
+}
 function contactPage() {
+  // alert(document.title);
   //Variable that is used to get the Element of the contactId
   var contactId = document.getElementById("contactId");
-  //Setting the innnerHTMl of the contactId to have say contact us and show icon
+  //Setting the innnerHTMl of the contactId to have say contact us and show favicon
   contactId.innerHTML = " <i class = 'fa-solid fa-comments'></i> Contact Us";
 
-  // declaring variable which contains the element which has id of productsLink
   var currentLink1 = document.getElementById("productsLink");
-
-  // setting it to empty
+  // alert(currentLink1.textContent);
   currentLink1.textContent = "";
-  // added to the icon on the navbar with the text
-  currentLink1.innerHTML = "<i class = 'fa-solid fa-th'></i> Project";
+  // need to add the icon in js
+  // currentLink1.textContent = "<i class='fa-solid fa-th'></i>";
+  currentLink1.textContent = "Projects";
 
-  // declared the variable and getting the element with the help of getElementById To add the Human resources link
   var humanResourcesLink = document.getElementById("humanResources");
   humanResourcesLink.innerHTML =
     " <a class='nav-link' href='#'> <i class = 'fa-solid fa-child'></i> Human Resources</a>";
-  // getting element of submit button
   var submitButtonClick = document.getElementById("submitButton");
-  // adding event listener when its clicked empty the fields and after 3 seconds redirect to home page along with printing things to console
   submitButtonClick.addEventListener("click", function (event) {
-    // we are preventing default so that it leaves the default behavior to refresh pages
     event.preventDefault();
-    // declaring variable and getting appropriate values from appropriate fields
     var inputName = document.getElementById("InputName").value;
     var inputEmailAddress = document.getElementById("InputEmail1").value;
     var inputNumber = document.getElementById("InputNumber").value;
     var inputMessage = document.getElementById("InputMessage").value;
-    // printing the output to the console
+
     console.log(
       "User Form Input" +
         "\n Name of the User: " +
@@ -79,39 +80,33 @@ function contactPage() {
     document.getElementById("InputEmail1").value = null;
     document.getElementById("InputNumber").value = null;
     document.getElementById("InputMessage").value = null;
-
-    // calling the timer function
+    //clearInputField();
     formTimer();
   });
-  //Set the background of the page to the background image
-  // adding appropriate css style
+  //Set the background of the page to the dc logo
   document.body.style.backgroundImage = "url('images/bgImage1.jpeg')";
   document.body.style.backgroundRepeat = "repeat";
   document.body.style.opacity = "0.9";
 }
-/**
- *Function is call to do functionality on product page when its called
- *
- */
 function productPage() {
   //get the element of the projectID
   var projectsHeading = document.getElementById("projectsID");
   //Set the InnnerHtml to show box favicon and Our Projects text
   projectsHeading.innerHTML = " <i class = 'fa-solid fa-box'></i> Our Projects";
-  // declaring variable which contains the element which has id of productsLink
+
   var currentLink1 = document.getElementById("productsLink");
-
-  // setting it to empty
+  // alert(currentLink1.textContent);
   currentLink1.textContent = "";
-
-  // added to the icon on the navbar with the text
-  currentLink1.innerHTML = "<i class = 'fa-solid fa-th'></i> Project";
+  // need to add the icon in js
+  // currentLink1.textContent = "<i class='fa-solid fa-th'></i>";
+  currentLink1.textContent = "Projects";
   //storing element of humanResources id in the humanResourcesLink
   var humanResourcesLink = document.getElementById("humanResources");
   //Setting the innnerHTML of the humanResourcesLink to print favicon and Human Resources text
   humanResourcesLink.innerHTML =
     " <a class='nav-link' href='#'> <i class = 'fa-solid fa-child'></i> Human Resources</a>";
-
+  //setting the background image to the dc logo Jpeg
+  document.body.style.backgroundImage = "url('images/dc logo.jpg')";
   //Storing the Element of paragraph1 in the paragraph1 variable
   var paragraph1 = document.getElementById("paragraph1");
   //Storing the text in the innerHTML of the paragraph1
@@ -136,16 +131,11 @@ function productPage() {
     " the Linux operating system. This was one of our favourites becuase" +
     " it was great to learn about the Linux operating system becuase it" +
     " was new to us.";
-  //Set the background of the page to the background image
-  // adding appropriate css style
   document.body.style.backgroundImage = "url('images/bgImage1.jpeg')";
   document.body.style.backgroundRepeat = "repeat";
   document.body.style.opacity = "0.9";
 }
-/**
- * Function is call to do functionality on service page when its called
- *
- */
+
 function servicePage() {
   //Storing the Element of paragraph1 in the paragraph1 variable
   var ServiceHeading = document.getElementById("serviceID");
@@ -156,14 +146,16 @@ function servicePage() {
   var currentLink1 = document.getElementById("productsLink");
   //Setting the textContent of the currentLink1 to nothing
   currentLink1.textContent = "";
-  // added to the icon on the navbar with the text
-  currentLink1.innerHTML = "<i class = 'fa-solid fa-th'></i> Project";
+  // need to add the icon in js
+  // currentLink1.textContent = "<i class='fa-solid fa-th'></i>";
+  currentLink1.textContent = "Projects";
   //Storing the element of the humanResources to the humanResourcesLink
   var humanResourcesLink = document.getElementById("humanResources");
-  //Setting the innnerHTML of the humanResourcesLink to print icon and Human Resources
+  //Setting the innnerHTML of the humanResourcesLink to print favicon and Human Resources
   humanResourcesLink.innerHTML =
     " <a class='nav-link' href='#'> <i class = 'fa-solid fa-child'></i> Human Resources</a>";
-
+  //Set background to dc logo image.
+  document.body.style.backgroundImage = "url('images/dc logo.jpg')";
   //Storing the element of paragraph4 to the paragraph4 variable
   var paragraph4 = document.getElementById("paragraph4");
   //storing text in paragraph4 innerHTML
@@ -185,16 +177,10 @@ function servicePage() {
     "Web-Development is another one of our major services that we provide" +
     "because alot of our clients enjoy how we build websites and appreciate" +
     "our website design.";
-  //Set the background of the page to the background image
-  // adding appropriate css style
   document.body.style.backgroundImage = "url('images/bgImage1.jpeg')";
   document.body.style.backgroundRepeat = "repeat";
   document.body.style.opacity = "0.9";
 }
-/**
- * Function is call to do functionality on about page when its called
- *
- */
 function aboutPage() {
   //Storing element of aboutId in getHeading
   var getHeading = document.getElementById("aboutId");
@@ -202,98 +188,74 @@ function aboutPage() {
   getHeading.innerHTML = "  <i class = 'fa-solid fa-user'></i> About Us";
   //Store element of productsLink in currentLink1 variable
   var currentLink1 = document.getElementById("productsLink");
+  // alert(currentLink1.textContent);
   //Set textContent of currentLink1 to blank
   currentLink1.textContent = "";
-  // added to the icon on the navbar with the text
-  currentLink1.innerHTML = "<i class = 'fa-solid fa-th'></i> Project";
-  //Storing the element of the humanResources to the humanResourcesLink
+  // need to add the icon in js
+  // currentLink1.textContent = "<i class='fa-solid fa-th'></i>";
+  //set textContent of currentLink1 to projects
+  currentLink1.textContent = "Projects";
+
   var humanResourcesLink = document.getElementById("humanResources");
-  //Setting the innnerHTML of the humanResourcesLink to print icons and Human Resources
   humanResourcesLink.innerHTML =
     " <a class='nav-link' href='#'> <i class = 'fa-solid fa-child'></i> Human Resources</a>";
-
-  // declaring variables to hold the returned value from getElementById
+  document.body.style.backgroundImage = "url('images/dc logo.jpg')";
   var heading1;
+
   var heading2;
-  // getting element by id for  tag to add the appropriate text
   heading1 = document.getElementById("heading1");
-  // adding text
   heading1.innerHTML =
     "This is a picture of Angaran. Angaran is a 2nd year student in the Computer Programmer Analyst Program" +
     "at Durham College. His Hobbies include playing sports and watching movies. Here is a link to his resume";
-  // getting element by id for  tag to add the appropriate text
+
   heading2 = document.getElementById("heading2");
-  // adding text
   heading2.innerHTML =
     "This is a picture of Devanshu. Devanshu is a second year student in the Durham College " +
     "Computer Programmer Analyst Program. His Hobbies include playing games and programming.";
-  //Set the background of the page to the background image
-  // adding appropriate css style
   document.body.style.backgroundImage = "url('images/bgImage1.jpeg')";
   document.body.style.backgroundRepeat = "repeat";
   document.body.style.opacity = "0.9";
 }
-/**
- * Function is call to do functionality on home page when its called
- *
- */
+
 function homePage() {
-  //get the element of the productsLink
   var currentLink1 = document.getElementById("productsLink");
-  //Set textContent of currentLink1 to blank
+
   currentLink1.textContent = "";
 
-  // added to the icon on the navbar with the text
-  currentLink1.innerHTML = "<i class = 'fa-solid fa-th'></i> Project";
-  //Storing the element of the humanResources to the humanResourcesLink
-  var humanResourcesLink = document.getElementById("humanResources");
-  //Setting the innnerHTML of the humanResourcesLink to print icons and Human Resources
+  // need to add the icon in js
+  // currentLink1.textContent = "<i class='fa-solid fa-th'></i>";
+  currentLink1.textContent = "Projects";
 
+  var humanResourcesLink = document.getElementById("humanResources");
   humanResourcesLink.innerHTML =
     " <a class='nav-link' href='#'> <i class = 'fa-solid fa-child'></i> Human Resources</a>";
-  // declaring variable to hold the returned value from getElementById
+
+  document.body.style.backgroundImage = "url('images/dc logo.jpg')";
   var heading3;
-  // getting to element by id and assigning it to variable
+
   heading3 = document.getElementById("heading3");
-  // adding context and icon
   heading3.innerHTML =
     "<i class = 'fa-solid fa-chess'></i> Welcome to our Website <i class = 'fa-solid fa-chess'></i>";
-  //Set the background of the page to the background image
-  // adding appropriate css style
   document.body.style.backgroundImage = "url('images/bgImage1.jpeg')";
   document.body.style.backgroundRepeat = "repeat";
   document.body.style.opacity = "0.9";
 }
-/**
- *  start function which contains switch statement on the basis of title it calls the function representing each page
- *
- */
 function start() {
-  // switch statement making a title as condition
   switch (document.title) {
-    // if title is home
     case "Home":
-      // calls home page function
       homePage();
       break;
-    // if title was Services
     case "Services":
-      // call servicePage function
       servicePage();
+
       break;
-    // if title is Products
     case "Products":
-      // calls productPage function
       productPage();
       break;
-    // if title is Contact Us
     case "Contact Us":
-      // calls contactPage function
       contactPage();
       break;
-    // if title is About  Us
     case "About Us":
-      // calls aboutPage function
       aboutPage();
       break;
   }
