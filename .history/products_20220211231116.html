@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Products</title>
     <link
       rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
     <link rel="stylesheet" href="Content/app.css" />
     <script src="./Scripts/app.js"></script>
@@ -40,7 +40,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" id="productsLink" href="./products.html"
+              <a class="nav-link link1" id="productsLink" href="./products.html"
                 ><i class="fa-solid fa-th"></i> Products</a
               >
             </li>
@@ -49,6 +49,7 @@
                 ><i class="fa-solid fa-bell"></i> Services</a
               >
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="./about.html">
                 <i class="fa-solid fa-circle-info"></i> About Us</a
@@ -64,12 +65,44 @@
         </div>
       </div>
     </nav>
-
     <div class="jumbotron bg-secondary container" id="contentArea">
-      <h1 id="heading3"></h1>
+      <br />
+      <br />
+      <h1 id="projectsID"><i class="fa-solid fa-comments"></i></h1>
+      <div id="pArea">
+        <div class="column">
+          <img
+            src="images/BMI.png"
+            alt="BMI"
+            style="width: 110%"
+            height="200px"
+          />
+          <p id="paragraph1"></p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img
+              src="images/Selenium.png"
+              alt="Selenium"
+              style="width: 200px"
+              height="190px"
+            />
+            <p id="paragraph2"></p>
+          </div>
+          <div class="column">
+            <img
+              src="images/Linux Screenshot 1.png"
+              alt="Linux"
+              style="width: 300px"
+              height="200px"
+            />
+            <p id="paragraph3"></p>
+          </div>
+        </div>
+        <!-- 3RD Party Library-->
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      </div>
     </div>
-    <!-- 3RD Party Library-->
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
